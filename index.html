@@ -5,7 +5,261 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HRX Brand</title>
-    <link rel="stylesheet" href="/CSS/hrx.css" />
+    <link rel="icon" type="jpg" href="Images/hrx-logo.jpg">
+  
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+    margin-left: 40px;
+    position: fixed;
+    left: 10px;
+}
+
+.page-link {
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+.page-link:hover {
+    color: #ff5252;
+}
+
+.icon1 {
+    color: white;
+    font-size: 24px;
+    right: 20px;
+    position: fixed;
+    top: 30px;
+}
+.icon1:hover{
+    color: #ff5252;
+}
+.btn {
+    background-color: #ff5252;
+    padding: 12px 20px;
+    color: white;
+    position: fixed;
+    right: 70px;
+    font-size: 14px;
+    font-weight: 600;
+    border: #ff5252;
+}
+
+.btn:hover{
+    background-color: red;
+}
+
+.bgimage {
+    width: 100%;
+    height: 100%;
+}
+
+.bgcont {
+    width: 100%;
+    height: 100%;
+}
+
+.search-bar {
+    width: 250px;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    right: 160px;
+}
+
+.Product-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.cart {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid rgb(198, 196, 196);
+    box-sizing:content-box;
+    padding-bottom: 21px;
+    position: relative;
+    
+    
+
+}
+
+.cart-img {
+    width: 250px;
+    height: 320px;
+}
+
+
+input[type="search"] {
+    background-image: url("/HTML/search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.horz-line-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.horz-line{
+    background-color: black;
+    height: 5px;
+    width: 35%;
+    border-radius: 5px;
+    
+}
+
+.heading{
+   font-family: 'Tangerine', serif;
+   font-size: 48px;
+   text-shadow: 4px 4px 4px #aaa;
+   text-align: center;
+}
+
+.caption{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.caption2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.orgprice{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.discount{
+    color: green;
+    font-size: 16px;
+}
+
+.wishlist{
+    border: 1px solid rgb(161, 154, 154);
+    background-color: white;
+    padding-left: 10px;
+    display: flex;
+    padding: 3px;
+    top: 318px;
+    justify-content: center;
+    position: absolute;
+    top: 271px;
+    width: 93%;
+    cursor: pointer;
+}
+
+
+
+.addtocart{
+    border: 1px solid rgb(161, 154, 154);
+    background-color: white;
+    padding-left: 10px;
+    display: flex;
+    padding: 3px;   
+    top: 320px;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    width: 93%;
+    cursor: pointer;
+    
+}
+
+.likeicon{
+    font-size: 20px;
+    color: red;
+    padding-right: 4px;
+    
+}
+
+.carticon{
+    font-size: 20px;
+    padding-right: 4px;
+    color: rgb(21, 21, 80);
+}
+
+.like-cart{
+    display: none;
+
+}
+
+.cart:hover .like-cart{
+    display: block;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    
+}
+
+.media-logo{
+    color: white;
+    font-size: 25px;
+    margin: 0px 15px;
+}
+
+.Navigation{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: flex-start;
+    margin: 57px 20px;
+   
+}
+.navigation-content{
+    margin-top: 15px;
+}
+.nav-content-p1{
+    margin-bottom: 7px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(156, 153, 153);
+}
+.nav-content-p2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(156, 153, 153);
+}   
+    </style>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Tangerine"
